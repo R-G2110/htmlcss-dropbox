@@ -18,13 +18,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 800;
   margin: 10px 0;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 800;
   margin: 10px 0;
 }
@@ -41,6 +41,10 @@ body {
   font-weight: 600;
 }
 
+section {
+  margin: 80px 0 150px 0;
+}
+
 .ext-container {
   width: 90%;
   max-width: 1200px;
@@ -54,13 +58,20 @@ body {
 }
 
 .btn {
-  padding: 15px 15px;
+  padding: 15px 20px;
   border: none;
   background-color: #0061FF;
   color: white;
   font-size: 1.2rem;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   cursor: pointer;
+}
+
+.small-card {
+  margin: 30px 0;
+  padding: 25px 20px;
+  flex-basis: 30%;
+  flex-wrap: wrap;
 }
 
 .debug {
@@ -176,20 +187,57 @@ main section .plans {
   justify-content: space-between;
 }
 
+main section .plans .plan-type{
+  width: 100%;
+  border: 1px solid #D0D0D3;
+}
+
 main section .small-card {
-  margin: 30px 0;
-  padding: 25px 20px;
-  flex-basis: 30%;
-  flex-wrap: wrap;
   border: 1px solid #D0D0D3 ;
 }
+
 main section .small-card  span:first-child{
   border-bottom: black;
 }
+main .small-card span:nth-of-type(1){
+  align-items: center;
+}
 
-/* .small-card li:nth-of-type(1)::before {
-  content: '<i class="fa-solid fa-user"></i>;';
-} */
+main .small-card span:nth-of-type(2){
+  display: block;
+  margin-bottom: 5px;
+}
+
+main .small-card .description li:nth-of-type(1)::before {
+  font-family: "Font Awesome 6 Free";
+  content: '\f007 ';
+  display: inline-block;
+  vertical-align: calc(100% - 95%);
+}
+
+main .small-card .description li:nth-of-type(2)::before {
+  font-family: "Font Awesome 6 Free";
+  content: '\f07b ';
+  display: inline-block;
+  vertical-align: calc(100% - 95%);
+}
+
+main .small-card .description li:nth-of-type(3)::before {
+  font-family: "Font Awesome 6 Free";
+  content: '\f1e0 ';
+  display: inline-block;
+  vertical-align: calc(100% - 95%);
+}
+
+main .small-card ul li{
+  margin: 25px 0;
+  text-indent: hanging;
+}
+
+main .small-card .btn{
+  margin: 20px 0;
+}
+
 
 main section .big-card {
   padding: 10px;
@@ -206,7 +254,7 @@ main section .contacts .small-column {
 }
 
 main section .partners{
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 main section .partners .small-column{
@@ -219,4 +267,20 @@ main section .partners .small-column .btn{
   color: black;
   border: 1px solid black;
   cursor: pointer;
+}
+
+main section .advantages li:nth-child(n)::before {
+  font-family: "Font Awesome 6 Free";
+  content: '\f00c';
+  display: inline-block;
+  color: #0061FF;
+  font-weight: bolder;
+}
+
+.col> img{
+  height: 200px;  
+}
+
+main section  .col.small-card {
+  border: none;
 }
