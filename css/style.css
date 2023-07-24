@@ -4,10 +4,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 h1 {
   font-size: 4.5rem;
   font-weight: 800;
+  margin-bottom: 50px;
 }
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 30px 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+
 
 a {
   color: black;
@@ -26,8 +48,8 @@ body {
 }
 
 .int-container {
-  width: 70%;
-  max-width: 1200px;
+  width: 60%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -38,6 +60,7 @@ body {
   color: white;
   font-size: 1.2rem;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .debug {
@@ -86,7 +109,7 @@ header .right-top-bar .logo {
   padding: 30px 20px;
 }
 
-.menu ul{
+ul{
   list-style: none;
 }
 
@@ -109,7 +132,7 @@ header .right-top-bar .logo {
 #jumbotron{
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 730px;
   padding-top: 120px;
 }
 
@@ -127,8 +150,73 @@ header #jumbotron .small-column .btn{
 }
 
 #jumbotron .small-column a i{
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 20px 0;
   cursor: pointer;
 }
 
+/* Main */
+main section {
+  margin-top: 150px;
+}
+
+main section span {
+  margin-right: 30px;
+}
+
+main section .fa-circle-dot {
+  color: #005BFF;
+}
+
+main section .fa-circle {
+  color: #D0D0D3;
+}
+
+main section .plans {
+  justify-content: space-between;
+}
+
+main section .small-card {
+  margin: 30px 0;
+  padding: 25px 20px;
+  flex-basis: 30%;
+  flex-wrap: wrap;
+  border: 1px solid #D0D0D3 ;
+}
+main section .small-card  span:first-child{
+  border-bottom: black;
+}
+
+/* .small-card li:nth-of-type(1)::before {
+  content: '<i class="fa-solid fa-user"></i>;';
+} */
+
+main section .big-card {
+  padding: 10px;
+  text-align: center;
+}
+
+main section .contacts .big-column, 
+main section .contacts .small-column {
+  padding: 20px;
+}
+
+main section .contacts .small-column {
+  text-align: right;
+}
+
+main section .partners{
+  margin-top: 100px;
+}
+
+main section .partners .small-column{
+  padding: 25px;
+}
+
+main section .partners .small-column .btn{
+  margin: 30px 0;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+}
