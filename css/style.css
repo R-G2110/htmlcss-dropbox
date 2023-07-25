@@ -57,13 +57,11 @@ section {
   background-color: #0061FF;
   color: white;
   font-size: 1.2rem;
-  /* margin-left: 10px; */
   cursor: pointer;
 }
 
 .small-card {
   margin: 30px 0;
-  padding: 25px 20px;
   flex-basis: 30%;
   flex-wrap: wrap;
 }
@@ -133,12 +131,6 @@ header .top-bar .menu li a {
   color: black;
 }
 
-header .top-bar .menu li a:hover {
-  text-decoration: underline 3px;
-  text-underline-offset: 180%;
-  
-}
-
 #jumbotron{
   justify-content: center;
   align-items: center;
@@ -174,9 +166,6 @@ main section span {
   margin-right: 30px;
 }
 
-main section .fa-circle-dot {
-  color: #005BFF;
-}
 
 main section .fa-circle {
   color: #D0D0D3;
@@ -185,21 +174,24 @@ main section .fa-circle {
 main section .plans {
   justify-content: space-between;
 }
-
-main section .plans .plan-type{
-  width: 100%;
-  border: 1px solid #D0D0D3;
-}
-
 main section .small-card {
-  border: 1px solid #D0D0D3 ;
+  border: 1px solid black;
 }
 
-main section .small-card  span:first-child{
-  border-bottom: black;
+
+main section .small-card .plan-type{
+  padding: 10px;
+  border-bottom: 1px solid black;
+  text-align: center;
 }
-main .small-card span:nth-of-type(1){
-  align-items: center;
+
+main section .small-card .plan-type .description li{
+  list-style-position: outside;
+}
+
+main section .small-card div:nth-of-type(2){
+  padding: 20px ;
+ 
 }
 
 main .small-card span:nth-of-type(2){
@@ -209,7 +201,7 @@ main .small-card span:nth-of-type(2){
 
 main .small-card .description li:nth-of-type(1)::before {
   font-family: "Font Awesome 6 Free";
-  content: '\f007 ';
+  content: '\f007';
   display: inline-block;
   vertical-align: calc(100% - 95%);
 }
@@ -223,14 +215,13 @@ main .small-card .description li:nth-of-type(2)::before {
 
 main .small-card .description li:nth-of-type(3)::before {
   font-family: "Font Awesome 6 Free";
-  content: '\f1e0 ';
+  content: '\f1e0';
   display: inline-block;
   vertical-align: calc(100% - 95%);
 }
 
-main .small-card ul li{
+main .small-card .description li {
   margin: 25px 0;
-  text-indent: hanging;
 }
 
 main .small-card .btn{
@@ -239,13 +230,20 @@ main .small-card .btn{
 
 
 main section .big-card {
-  padding: 10px;
+  border: 1px solid black;
+}
+
+main section .big-card .plan-type{
   text-align: center;
 }
 
 main section .contacts .big-column, 
 main section .contacts .small-column {
   padding: 20px;
+}
+
+main section .big-card .contacts{
+  border-top: 1px solid black;
 }
 
 main section .contacts .small-column {
@@ -282,6 +280,7 @@ main section .advantages li:nth-child(n)::before {
 
 main section .col.small-card {
   border: none;
+  padding: 10px;
 }
 
 main section .box{
@@ -313,6 +312,7 @@ main section .box .team-description {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: invert(1);
   
 }
 
@@ -370,10 +370,6 @@ main .box .team-description .company-desc {
   margin-bottom: 50px;
 }
 
-.team .team-box:active {
-  border: 30px solid green;
-}
-
 main section .d-business {
   width: 100%;
   padding: 20px;
@@ -396,17 +392,22 @@ main .accordion .faq {
   padding: 40px 0;
   font-weight: 900;
   border-top: 1px solid #B2B2B2;
-  border-bottom: 1px solid #B2B2B2;
   justify-content: space-between;
+  position: relative;
 }
 
 main .accordion .faq div{
   padding: 0 30px;
 }
 
-main .accordion .faq:hover{
-  cursor: pointer;
+main .accordion .faq p:nth-of-type(2) {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+
 
 /* Footer */
 footer {

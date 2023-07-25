@@ -1,0 +1,32 @@
+/* Header */
+header .top-bar .menu li a:hover {
+  text-decoration: underline 3px;
+  text-underline-offset: 180%;
+}
+
+.btn:hover {
+  /* filter: opacity(.7); */
+  background-color: gray;
+  color: blue;
+}
+
+
+
+/* Main */
+main section .fa-circle:hover {
+  cursor: pointer;
+  font-family: "Font Awesome 6 Free";
+  content: '\f192';
+  color: #005BFF;
+}
+
+main .team .team-box:active {
+  border: 30px solid green;
+}
+
+main .accordion .faq:hover p:nth-of-type(2){
+  cursor: pointer;
+  display: block;
+  background-color: white;
+}
+

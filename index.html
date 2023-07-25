@@ -11,6 +11,8 @@
 
   <!-- Custom Css -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Htmlcss Dropbox</title>
@@ -26,18 +28,18 @@
           </div>
           <nav class="menu">
             <ul>
-              <li><a href="#">perché dropbox</a></li>
-              <li><a href="#">funzioni</a></li>
-              <li><a href="#">piani e prezzo</a></li>
+              <li><a href="#">Perché Dropbox</a></li>
+              <li><a href="#">Funzioni</a></li>
+              <li><a href="#">Piani e Prezzo</a></li>
             </ul>
           </nav>
         </div>
         <div class="left-top-bar flex">
           <nav class="menu">
             <ul>
-              <li><a href="#">supporto</a></li>
-              <li><a href="#">contatta l'ufficio vendita</a></li>
-              <li><a href="#">accedi</a></li>
+              <li><a href="#">Supporto</a></li>
+              <li><a href="#">Contatta l'ufficio vendita</a></li>
+              <li><a href="#">Accedi</a></li>
             </ul>
           </nav>
           <button class="btn">Inizia</button>
@@ -51,7 +53,7 @@
           <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dalle stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
           <button class="btn">Inizia la prova gratuita</button>
           <span>Annulla in qualsiasi momento</span>
-          <a href="#main">
+          <a href="#main" target="_self">
             <i class="fa-solid fa-arrow-down"></i>
           </a>
 
@@ -70,96 +72,111 @@
     <section>
       <div class="int-container">
         <h2>Trova il piano business che fa per te</h2>
-        <i class="fa-solid fa-circle-dot"></i>
+        <i class="fa-regular fa-circle"></i>
         <span>Fatturazione mensile</span>
         <i class="fa-regular fa-circle"></i>
         <span>Fatturazione annuale</span>
         
         <div class="plans flex">
-          <div class="small-card debug">
+
+          <div class="small-card">
             <div class="plan-type">
               <i class="fa-solid fa-user"></i>
               <span>Singolo</span>
             </div>
-            <h3>Professional</h3>
-            <span>&euro; 12.00</span>
-            <span>&sol;mese</span>
-            <ul class="description">
-              
-              <li>1 utente</li>
-              <li>5 TB di spazio di archiviazione</li>
-              <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
-              
-            </ul>
-            <button class="btn">Prova gratis per 30 giorni</button>
-            <span>oppure <a href="#">acquista ora</a></span>
-
-            <ul class="advantages">
-              <li>Invia fino a 100 GB con Dropbox transfert</li>
-              <li>Cartelle offline su dispositivi</li>
-            </ul>
+            <div>
+              <h3>Professional</h3>
+              <span>&euro; 12.00</span>
+              <span>&sol;mese</span>
+              <ul class="description">
+                
+                <li>1 utente</li>
+                <li>5 TB di spazio di archiviazione</li>
+                <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                
+              </ul>
+              <button class="btn">Prova gratis per 30 giorni</button>
+              <span>oppure <a href="#">acquista ora</a></span>
+  
+              <ul class="advantages">
+                <li>Invia fino a 100 GB con Dropbox transfert</li>
+                <li>Cartelle offline su dispositivi</li>
+              </ul>
+            </div>
           </div>
+
           <div class="small-card">
-            <i class="fa-solid fa-user"></i>
-            <span class="debug">Team</span>
-            <h3>Advanced</h3>
-            <span>&euro;18.00</span>
-            <span>&sol;utente&sol;mese</span>
-            <ul class="description">
-              
-              <li>3 o più utenti</li>
-              <li>Tutto lo spazio di cui ha bisogno il tuo team</li>
-              <li>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
-              
-            </ul>
-            <button class="btn">Prova gratis per 30 giorni</button>
-            <span>oppure <a href="#">acquista ora</a></span>
-
-            <ul class="advantages">
-              <li>Nessun limite di spazio per i file</li>
-              <li>Cartelle offline su dispositivi mobili</li>
-              <li>Risparmio del 50% rispetto alle iscrizioni singole</li>
-              <li>Possibilità di inserire nuovi membri del team</li>
-              <li>Gestione dei permessi in base ai ruoli</li>
-            </ul>
+            <div class="plan-type">
+              <i class="fa-solid fa-user"></i>
+              <span>Team</span>
+            </div>
+            <div>
+              <h3>Advanced</h3>
+              <span>&euro;18.00</span>
+              <span>&sol;utente&sol;mese</span>
+              <ul class="description">
+                
+                <li>3 o più utenti</li>
+                <li>Tutto lo spazio di cui ha bisogno il tuo team</li>
+                <li>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
+                
+              </ul>
+              <button class="btn">Prova gratis per 30 giorni</button>
+              <span>oppure <a href="#">acquista ora</a></span>
+  
+              <ul class="advantages">
+                <li>Nessun limite di spazio per i file</li>
+                <li>Cartelle offline su dispositivi mobili</li>
+                <li>Risparmio del 50% rispetto alle iscrizioni singole</li>
+                <li>Possibilità di inserire nuovi membri del team</li>
+                <li>Gestione dei permessi in base ai ruoli</li>
+              </ul>
+            </div>
           </div>
+
           <div class="small-card">
-            <i class="fa-solid fa-user"></i>
-            <span>Azienda</span>
-            <h3>Enterprise</h3>
-            <span>&ndash;</span>
-            <span>&nbsp;</span>
-            <ul class="description">
-              
-              <li>1 utente</li>
-              <li>5 TB di spazio di archiviazione</li>
-              <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
-              
-            </ul>
-            <button class="btn">Prova gratis per 30 giorni</button>
-            <span>oppure <a href="#">acquista ora</a></span>
-
-            <ul class="advantages">
-              <li>Invia fino a 100 GB con Dropbox transfert</li>
-              <li>Cartelle offline su dispositivi</li>
-            </ul>
-          </div>
+            <div class="plan-type">
+              <i class="fa-solid fa-user"></i>
+              <span>Azienda</span>
+            </div>
+            <div>
+              <h3>Enterprise</h3>
+              <span>&ndash;</span>
+              <span>&nbsp;</span>
+              <ul class="description">
+                
+                <li>1 utente</li>
+                <li>5 TB di spazio di archiviazione</li>
+                <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                
+              </ul>
+              <button class="btn">Prova gratis per 30 giorni</button>
+              <span>oppure <a href="#">acquista ora</a></span>
+  
+              <ul class="advantages">
+                <li>Invia fino a 100 GB con Dropbox transfert</li>
+                <li>Cartelle offline su dispositivi</li>
+              </ul>
+            </div>
+            </div>
         </div>
 
-        <div class="big-card debug">
-          <span class=" debug">Team</span>
+        <div class="big-card">
+          <div class="plan-type">
+            <span>Team</span>
+          </div>
 
-        </div>
-        <div class="contacts flex debug">
-          <div class="big-column debug">
-            <h3>Enterprise</h3>
-            <h4>Contatta l'ufficio vendite per i prezzi</h4>
-            <span>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</span>
+          <div class="contacts flex">
+            <div class="big-column">
+              <h3>Enterprise</h3>
+              <h4>Contatta l'ufficio vendite per i prezzi</h4>
+              <span>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</span>
+            </div>
+            <div class="small-column">
+              <button class="btn">Contatta l'ufficio vendita</button>
+            </div>
+            
           </div>
-          <div class="small-column debug">
-            <button class="btn">Contatta l'ufficio vendita</button>
-          </div>
-          
         </div>
   
       </div>
@@ -308,21 +325,27 @@
         <h2>Domande frequenti</h2>
         <div class="faq flex">
           <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda suscipit doloribus officia nisi similique ea eum culpa quisquam veritatis quasi omnis laboriosam, voluptate totam commodi. Ipsam temporibus facilis vel.</p>
           <div>
             <i class="fa-solid fa-chevron-down"></i>
           </div>
         </div>
         <div class="faq flex">
           <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda suscipit doloribus officia nisi similique ea eum culpa quisquam veritatis quasi omnis laboriosam, voluptate totam commodi. Ipsam temporibus facilis vel.</p>
           <div>
             <i class="fa-solid fa-chevron-down"></i>
           </div>
         </div>
         <div class="faq flex">
           <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda suscipit doloribus officia nisi similique ea eum culpa quisquam veritatis quasi omnis laboriosam, voluptate totam commodi. Ipsam temporibus facilis vel.</p>
           <div>
             <i class="fa-solid fa-chevron-down"></i>
           </div>
+        </div>
+        <div class="faq">
+          <span>&nbsp;</span>
         </div>
       </div>
     </section>
