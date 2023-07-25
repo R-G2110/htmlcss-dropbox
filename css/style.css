@@ -91,6 +91,10 @@ section {
   width: 35%;
 }
 
+/* .med-column {
+  width: 50%;
+} */
+
 img {
   object-fit: cover;
   width: 100%;
@@ -107,6 +111,7 @@ header .top-bar {
   height: 80px;
   background-color: white;
   position: fixed;
+  z-index: 999;
 }
 
 header .top-bar div{
@@ -281,6 +286,130 @@ main section .advantages li:nth-child(n)::before {
   height: 200px;  
 }
 
-main section  .col.small-card {
+main section .col.small-card {
   border: none;
+}
+
+main section .box{
+  width: 100vw;
+  margin-top: 100px;
+}
+
+main section .box .team {
+  width: calc(100% / 3);
+  flex-wrap: wrap;
+}
+
+main section .box .team .team-box {
+  width: calc(100% / 2);
+  height: calc((100vw / 3) / 2);
+  position: relative;
+}
+
+main section .box .team-description {
+  width: calc(100% / 3);
+  padding: 30px;
+  flex-direction: column;
+  background-color: #F5F5F5;
+}
+
+ .team .team-box img{
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.designit {
+  background-color: #A2D39B;
+}
+
+.asu {
+  background-color: #61082B;
+}
+
+.uof {
+  background-color: #0093CE;
+}
+
+.topps {
+  background-color: #FF1C1C;
+}
+
+.wbr {
+  background-color: #D5001F;
+}
+
+.hearst {
+  background-color: #B4D0E7;
+}
+
+.lonely-planet {
+  background-color: #0D2481;
+}
+
+.clear-channel {
+  background-color: #FFD830;
+}
+
+main section .box .team-description .company{
+  width: calc(100% / 2);
+  height: calc(((100vw / 3) / 2) / 2);
+  border-bottom: 1px solid #D0D0D3;
+  position: relative;
+}
+
+/* main section .box .team-description .company::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: calc(100% / 2);
+  border-bottom: 10px solid black;
+  bottom: 0;
+  right: 0;
+} */
+
+main .box .team-description .company,
+main .box .team-description .company-desc {
+  margin-bottom: 50px;
+}
+
+.team .team-box:active {
+  border: 30px solid green;
+}
+
+main section .d-business {
+  width: 100%;
+  padding: 20px;
+  background-color: #B4D0E7;
+}
+
+main section .d-business div {
+  flex-basis: 50%;
+}
+
+main section .d-business button {
+  margin: 50px 100px;
+}
+
+main section .d-business h2 {
+  color: #5F0326;
+}
+
+main .accordion .faq {
+  padding: 40px 0;
+  font-weight: 900;
+  border-top: 1px solid #B2B2B2;
+  border-bottom: 1px solid #B2B2B2;
+  justify-content: space-between;
+}
+
+main .accordion .faq div{
+  padding: 0 30px;
+}
+
+main .accordion .faq:hover{
+  cursor: pointer;
 }
