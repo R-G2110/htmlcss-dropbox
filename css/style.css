@@ -103,7 +103,7 @@ header .top-bar {
   height: 80px;
   background-color: white;
   position: fixed;
-  z-index: 999;
+  z-index: 998;
 }
 
 header .top-bar div{
@@ -166,10 +166,19 @@ main section span {
   margin-right: 30px;
 }
 
-
 main section .fa-circle {
   color: #D0D0D3;
+  cursor: pointer;
 }
+
+/* main section .fa-circle-dot {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+} */
+
 
 main section .plans {
   justify-content: space-between;
@@ -424,11 +433,13 @@ footer .upper-footer div {
 footer .upper-footer h4 {
   margin-bottom: 30px;
 }
+footer .upper-footer li{
+  margin-bottom: 20px;
+
+}
 
 footer .upper-footer li a{
   color: white;
-  margin-bottom: 500px;
-  justify-content: space-between;
 }
 
 footer .upper-footer .menu li a {
@@ -437,8 +448,15 @@ footer .upper-footer .menu li a {
 
 footer .bottom-footer div {
   flex-basis: 10%;
+  padding: 50px 0;
+  border-top: 1px solid white;
 }
 
-footer .bottom-footer div:nth-of-type(1){
-  border-top: 1px solid white;
+footer .social a {
+  color: white;
+}
+
+footer .social a i{
+  margin-right: 25px;
+  padding: 30px 0;
 }
