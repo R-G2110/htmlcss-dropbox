@@ -157,6 +157,11 @@ header #jumbotron .small-column .btn{
   cursor: pointer;
 }
 
+header #jumbotron .small-column a{
+  color: black;
+}
+
+
 /* Main */
 main section {
   margin-top: 150px;
@@ -175,13 +180,13 @@ main section .plans {
   justify-content: space-between;
 }
 main section .small-card {
-  border: 1px solid black;
+  border: 1px solid #D0D0D3;
 }
 
 
 main section .small-card .plan-type{
   padding: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #D0D0D3;
   text-align: center;
 }
 
@@ -192,7 +197,7 @@ main .small-card span:nth-of-type(2){
 
 main .small-card .description li, 
 main .small-card .advantages li {
-  margin: 25px 0;
+  margin: 15px 0;
 }
 
 main .small-card .btn{
@@ -211,7 +216,7 @@ main .small-card div:nth-of-type(5) {
 
 
 main section .big-card {
-  border: 1px solid black;
+  border: 1px solid #D0D0D3;
 }
 
 main section .big-card .plan-type{
@@ -224,7 +229,7 @@ main section .contacts .small-column {
 }
 
 main section .big-card .contacts{
-  border-top: 1px solid black;
+  border-top: 1px solid #D0D0D3;
 }
 
 main section .contacts .small-column {
@@ -327,16 +332,6 @@ main section .box .team-description .company{
   position: relative;
 }
 
-/* main section .box .team-description .company::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: calc(100% / 2);
-  border-bottom: 10px solid black;
-  bottom: 0;
-  right: 0;
-} */
-
 main .box .team-description .company,
 main .box .team-description .company-desc {
   margin-bottom: 50px;
@@ -360,7 +355,7 @@ main section .d-business h2 {
   color: #5F0326;
 }
 
-main .accordion .faq {
+main #accordion .faq {
   padding: 40px 0;
   font-weight: 900;
   border-top: 1px solid #B2B2B2;
@@ -368,11 +363,11 @@ main .accordion .faq {
   position: relative;
 }
 
-main .accordion .faq div{
+main #accordion .faq div{
   padding: 0 30px;
 }
 
-main .accordion .faq p:nth-of-type(2) {
+main #accordion .faq p:nth-of-type(2) {
   display: none;
   position: absolute;
   top: 0;

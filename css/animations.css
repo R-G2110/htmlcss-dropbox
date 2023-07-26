@@ -5,9 +5,8 @@ header .top-bar .menu li a:hover {
 }
 
 .btn:hover {
-  /* filter: opacity(.7); */
-  background-color: gray;
-  color: blue;
+  filter: opacity(.8);
+
 }
 
 
@@ -21,23 +20,25 @@ header .top-bar .menu li a:hover {
   color: #005BFF; 
  }
  
- main section .small-column .btn:hover {
+ main section .small-column .partner-btn:hover {
   background-color: gray;
   color: white;
  }
 
  main section .row .small-card:hover {
   border: 1px solid lightgray;
-  background: #afe6c3;
+  background: #005BFF;
+  color: white;
   border-radius: 10px;
   transform: scale(1.05)
  }
 
 main .team .team-box:active {
-  border: 10px solid opacity
+  box-shadow: inset 0 0 10px 25px rgba(0, 0, 0, .2); 
 }
 
-main .accordion .faq:hover p:nth-of-type(2){
+
+main #accordion .faq:hover p:nth-of-type(2){
   cursor: pointer;
   display: block;
   background-color: white;

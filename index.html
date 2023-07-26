@@ -68,16 +68,13 @@
   <!-- /header -->
 
   <!-- main -->
-  <main>
+  <main id="main">
     <section>
       <div class="int-container">
         <h2>Trova il piano business che fa per te</h2>
-        <span>
-          <i class="fa-regular fa-circle"></i>
-          <i class="fa-solid fa-circle-dot"></i>
-        </span>
+        <input type="radio" name="subscription">
         <span>Fatturazione mensile</span>
-        <i class="fa-regular fa-circle"></i>
+        <input type="radio" name="subscription">
         <span>Fatturazione annuale</span>
 
         <div class="plans flex">
@@ -195,75 +192,9 @@
             </div>        
             
           </div>
-            
-            
-            
-            
-
-      
           
         </div>
         
-        <!-- <div class="plans flex">
-
-          
-          
-
-          <div class="small-card">
-            <div class="plan-type">
-              <i class="fa-solid fa-users"></i>
-              <span>Team</span>
-            </div>
-            <div>
-              <h3>Advanced</h3>
-              <span>&euro;18.00</span>
-              <span>&sol;utente&sol;mese</span>
-              <ul class="description">
-                
-                <li>3 o più utenti</li>
-                <li>Tutto lo spazio di cui ha bisogno il tuo team</li>
-                <li>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
-                
-              </ul>
-              <button class="btn">Prova gratis per 30 giorni</button>
-              <span>oppure <a href="#">acquista ora</a></span>
-  
-              <ul class="advantages">
-                <li>Nessun limite di spazio per i file</li>
-                <li>Cartelle offline su dispositivi mobili</li>
-                <li>Risparmio del 50% rispetto alle iscrizioni singole</li>
-                <li>Possibilità di inserire nuovi membri del team</li>
-                <li>Gestione dei permessi in base ai ruoli</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="small-card">
-            <div class="plan-type">
-              <i class="fa-solid fa-building"></i>
-              <span>Azienda</span>
-            </div>
-            <div>
-              <h3>Enterprise</h3>
-              <span>&ndash;</span>
-              <span>&nbsp;</span>
-              <ul class="description">
-                
-                <li>1 utente</li>
-                <li>5 TB di spazio di archiviazione</li>
-                <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
-                
-              </ul>
-              <button class="btn">Prova gratis per 30 giorni</button>
-              <span>oppure <a href="#">acquista ora</a></span>
-  
-              <ul class="advantages">
-                <li>Invia fino a 100 GB con Dropbox transfert</li>
-                <li>Cartelle offline su dispositivi</li>
-              </ul>
-            </div>
-            </div>
-        </div> -->
 
         <div class="big-card">
           <div class="plan-type">
@@ -291,7 +222,7 @@
         <div class="small-column">
           <h3>Entra in contatto con un partner Dropbox</h3>
           <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettiviaziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
-          <button class="btn">Trova un partner</button>
+          <button class="partner-btn btn">Trova un partner</button>
         </div>
       </div>
     </section>
@@ -425,7 +356,8 @@
     </section>
 
     <section>
-      <div class="accordion int-container">
+      
+      <div id="accordion" class=" int-container">
         <h2>Domande frequenti</h2>
         <div class="faq flex">
           <p>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
