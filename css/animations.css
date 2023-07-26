@@ -34,7 +34,7 @@ header .top-bar .menu li a:hover {
  }
 
 main .team .team-box:active {
-  border: 30px solid green;
+  border: 10px solid opacity
 }
 
 main .accordion .faq:hover p:nth-of-type(2){

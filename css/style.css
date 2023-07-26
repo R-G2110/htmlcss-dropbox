@@ -171,15 +171,6 @@ main section .fa-circle {
   cursor: pointer;
 }
 
-/* main section .fa-circle-dot {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-} */
-
-
 main section .plans {
   justify-content: space-between;
 }
@@ -194,47 +185,28 @@ main section .small-card .plan-type{
   text-align: center;
 }
 
-main section .small-card .plan-type .description li{
-  list-style-position: outside;
-}
-
-main section .small-card div:nth-of-type(2){
-  padding: 20px ;
- 
-}
-
 main .small-card span:nth-of-type(2){
   display: block;
   margin-bottom: 5px;
 }
 
-main .small-card .description li:nth-of-type(1)::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f007';
-  display: inline-block;
-  vertical-align: calc(100% - 95%);
-}
-
-main .small-card .description li:nth-of-type(2)::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f07b ';
-  display: inline-block;
-  vertical-align: calc(100% - 95%);
-}
-
-main .small-card .description li:nth-of-type(3)::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f1e0';
-  display: inline-block;
-  vertical-align: calc(100% - 95%);
-}
-
-main .small-card .description li {
+main .small-card .description li, 
+main .small-card .advantages li {
   margin: 25px 0;
 }
 
 main .small-card .btn{
   margin: 20px 0;
+}
+
+main .small-card div:nth-of-type(2),
+main .small-card div:nth-of-type(4) {
+  padding: 0 20px;
+}
+
+main .small-card div:nth-of-type(3),
+main .small-card div:nth-of-type(5) {
+  padding: 0 11px;
 }
 
 
@@ -248,7 +220,7 @@ main section .big-card .plan-type{
 
 main section .contacts .big-column, 
 main section .contacts .small-column {
-  padding: 20px;
+  padding: 10px;
 }
 
 main section .big-card .contacts{
@@ -274,16 +246,6 @@ main section .partners .small-column .btn{
   border: 1px solid black;
   cursor: pointer;
 }
-
-main section .advantages li:nth-child(n)::before {
-  font-family: "Font Awesome 6 Free";
-  content: '\f00c';
-  display: inline-block;
-  color: #0061FF;
-  font-weight: bolder;
-}
-
-
 
 main section .col> img{
   height: 200px;  
@@ -324,7 +286,6 @@ main section .box .team-description {
   left: 50%;
   transform: translate(-50%, -50%);
   filter: invert(1);
-  
 }
 
 .designit {
