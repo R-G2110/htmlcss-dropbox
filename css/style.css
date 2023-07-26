@@ -283,7 +283,9 @@ main section .advantages li:nth-child(n)::before {
   font-weight: bolder;
 }
 
-.col> img{
+
+
+main section .col> img{
   height: 200px;  
 }
 

@@ -21,6 +21,17 @@ header .top-bar .menu li a:hover {
   color: #005BFF; 
  }
  
+ main section .small-column .btn:hover {
+  background-color: gray;
+  color: white;
+ }
+
+ main section .row .small-card:hover {
+  border: 1px solid lightgray;
+  background: #afe6c3;
+  border-radius: 10px;
+  transform: scale(1.05)
+ }
 
 main .team .team-box:active {
   border: 30px solid green;
