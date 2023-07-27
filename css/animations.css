@@ -33,7 +33,7 @@ header .top-bar .menu li a:hover {
   transform: scale(1.05)
  }
 
-main .team .team-box:active {
+main .team .team-box:focus {
   box-shadow: inset 0 0 10px 25px rgba(0, 0, 0, .2); 
 }
 
