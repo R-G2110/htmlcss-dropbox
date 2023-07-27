@@ -296,6 +296,7 @@ main section .box .team .team-box {
   width: calc(100% / 2);
   height: calc((100vw / 3) / 2);
   position: relative;
+  border: none;
 }
 
 main section .box .team-description {
